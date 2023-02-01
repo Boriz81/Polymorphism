@@ -1,4 +1,7 @@
 import compiltime.New;
+import myth.Chimera;
+import myth.Dragon;
+import myth.MythicalAnimal;
 import runtime.Next;
 import runtime.Precedence;
 
@@ -19,5 +22,13 @@ public class Main {
         System.out.println(precedenceInstance.calculate(4, 5, 6));
         System.out.println(nextInstance.calculate(4, 5, 6));
         System.out.println(mixInstance.calculate(7, 8, 9));
+        // package myth
+        MythicalAnimal chimera = new Chimera();
+        MythicalAnimal dragon = new Dragon();
+        MythicalAnimal animal = new MythicalAnimal();
+
+        chimera.hello();
+        dragon.hello();
+        animal.hello();
     }
 }
