@@ -1,3 +1,5 @@
+import basderclass.BaseClass;
+import basderclass.DerivedClass;
 import compiltime.New;
 import myth.Chimera;
 import myth.Dragon;
@@ -19,16 +21,19 @@ public class Main {
         Next nextInstance = new Next(1, 2, 3);
         Precedence mixInstance = new Next(10, 2, 3);
 
-        System.out.println(precedenceInstance.calculate(4, 5, 6));
+        /*System.out.println(precedenceInstance.calculate(4, 5, 6));
         System.out.println(nextInstance.calculate(4, 5, 6));
-        System.out.println(mixInstance.calculate(7, 8, 9));
+        System.out.println(mixInstance.calculate(7, 8, 9));*/
         // package myth
         MythicalAnimal chimera = new Chimera();
         MythicalAnimal dragon = new Dragon();
         MythicalAnimal animal = new MythicalAnimal();
 
-        chimera.hello();
+      /*  chimera.hello();
         dragon.hello();
-        animal.hello();
+        animal.hello();*/
+
+        BaseClass derivedClass = new DerivedClass();
+        derivedClass.print();
     }
 }
